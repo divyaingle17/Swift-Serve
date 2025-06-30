@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>swiftServe Admin Dashboard</title>
+  <link rel="stylesheet" href="dash.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h2>swiftServe</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Bookings</li>
+      <li>Services</li>
+      <li>Providers</li>
+      <li>Customers</li>
+      <li>Reports</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <header>
+      <h1>Admin Dashboard</h1>
+    </header>
+
+    <section class="cards">
+      <div class="card">Pending: 15</div>
+      <div class="card">Completed: 80</div>
+      <div class="card">Revenue: ₹1,20,000</div>
+    </section>
+
+    <section class="table-section">
+      <h2>Recent Bookings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Booking ID</th>
+            <th>Customer</th>
+            <th>Service</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Change</th>
+          </tr>
+        </thead>
+        <tbody id="bookingTable">
+          <!-- rows populated here -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
